@@ -1,0 +1,13 @@
+2022-07-25 13:26:16 [main] INFO  c.e.e.EnterpriseTalentManagementApplication - Starting EnterpriseTalentManagementApplication using Java 1.8.0_341 on Kui with PID 7696 (C:\IDEA\springboot\EnterpriseTalentManagement\target\classes started by 54463 in C:\IDEA\springboot\EnterpriseTalentManagement)
+2022-07-25 13:26:16 [main] INFO  c.e.e.EnterpriseTalentManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-25 13:26:17 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-25 13:26:17 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-25 13:26:17 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-25 13:26:17 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-25 13:26:17 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-07-25 13:26:17 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-25 13:26:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1199 ms
+2022-07-25 13:26:18 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-07-25 13:26:18 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-25 13:26:18 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-25 13:26:18 [main] INFO  c.e.e.EnterpriseTalentManagementApplication - Started EnterpriseTalentManagementApplication in 2.367 seconds (JVM running for 3.289)

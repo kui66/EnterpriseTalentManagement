@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.enterprisetalentmanagement.mapper.enterpriseTalentMapper">
+    <select id="selAll" resultType="com.example.enterprisetalentmanagement.entity.enterpriseTalent">
+        SELECT e.id,e.name,e.workingLife,d.`name` departmentName,e.graduateSchool
+        FROM enterprisetalent e,department d
+        <where>
+            e.departmentId = d.id
+            <if test="departmentId != null">
+               and  departmentId = #{departmentId}
+            </if>
+            <if test="id != null">
+                and e.id = #{id}
+            </if>
+        </where>
+    </select>
+    <insert id="insert">
+        INSERT INTO `enterprisetalent` (`name`, `workingLife`, `workExperience`, `personalProfile`, `departmentId`, `graduateSchool`)
+        VALUES (#{name}, #{workingLife}, #{workExperience}, #{personalProfile}, #{departmentId}, #{graduateSchool});
+    </insert>
+    <delete id="del">
+        DELETE from enterprisetalent WHERE id=#{id}
+    </delete>
+    <update id="update">
+        UPDATE `enterprisetalent` SET `name` = #{name}, `workingLife` = #{workingLife}, `workExperience` = #{workExperience},
+                                      `personalProfile` = #{personalProfile}, `departmentId` = #{departmentId},
+                                      `graduateSchool` = #{graduateSchool}
+                                  WHERE `id` = #{id};
+    </update>
+</mapper>
+
+
